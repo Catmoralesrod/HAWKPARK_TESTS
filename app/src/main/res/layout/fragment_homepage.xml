@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundRed"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/hawk_bar_default"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/backgroundWhite">
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight=".8"
+            android:src="@drawable/hawkpark_logo_2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:background="@color/backgroundRed"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="bottom|center"
+            android:paddingTop="20dp"
+            android:text="@string/header_registration"
+            android:textAlignment="center"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp"
+            tools:text="Your Campus Valet" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button3"
+            android:background="@drawable/sidemenu_buttonred"
+            android:onClick="sidemenu_click"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/border_black"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/textBlack"
+        android:layout_below="@id/hawk_bar_default"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/border_black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/backgroundGray"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:scrollbars="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Available Parking"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/textWhite"
+                android:textSize="10pt"/>
+
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Lot 24"
+           android:id="@+id/lot24_btn"
+           android:layout_marginBottom="20dp"
+           android:background="@color/lotGreen"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Lot 23N"
+           android:id="@+id/lot23N_btn"
+           android:layout_marginBottom="20dp"
+           android:background="@color/lotYellow"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Lot 21"
+           android:id="@+id/lot21_btn"
+           android:layout_marginBottom="20dp"
+           android:background="@color/lotGreen"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="CarParc Diem"
+           android:layout_marginBottom="20dp"
+           android:background="@color/lotRed"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lot 22"
+                android:id="@+id/lot22_btn"
+                android:layout_marginBottom="20dp"
+                android:background="@color/lotYellow"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lot 60"
+                android:id="@+id/lot60_btn"
+                android:layout_marginBottom="20dp"
+                android:background="@color/lotRed"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lot 61"
+                android:id="@+id/lot61_btn"
+                android:layout_marginBottom="20dp"
+                android:background="@color/lotRed"/>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:layout_weight="1.16">
+        <RadioButton
+            android:text="Distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginTop="98dp"
+            android:id="@+id/distance_btn"
+            android:textColor="@color/textWhite"
+            />
+        <RadioButton
+            android:text="Favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginTop="98dp"
+            android:id="@+id/favorite_btn"
+            android:textColor="@color/textWhite"/>
+        <RadioButton
+            android:text="Availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginTop="98dp"
+            android:id="@+id/avail_btn"
+            android:textColor="@color/textWhite"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
